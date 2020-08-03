@@ -16,7 +16,7 @@ const persistConfig={
 
 const Allreducers= combineReducers({user:userreducer,game:gamereducer})
 const persistedreducer=persistReducer(persistConfig,Allreducers)
-export const store= createStore(persistedreducer)
+export const store= createStore(persistedreducer,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 export const persistor= persistStore(store)
 
 // ,window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
