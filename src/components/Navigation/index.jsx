@@ -23,6 +23,9 @@ class Navigation extends Component {
       <li>
         <Link to={ROUTES.ADMIN}>Admin</Link>
       </li>
+      <li>
+        <Link to={ROUTES.PasswordChange}>PASSWORD CHANGE</Link>
+      </li>
     </ul>
   </div>
          );

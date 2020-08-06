@@ -10,6 +10,7 @@ import PasswordForgetPage from '../PasswordForget';
 import HomePage from '../Home';
 import AccountPage from '../Account';
 import AdminPage from '../Admin';
+import PasswordChange from '../PasswordChange';
 
 class App extends Component {
     state = {  }
@@ -19,6 +20,7 @@ class App extends Component {
                 <Navigation />
                 <hr />
                 <Switch>
+                    <Route path={ROUTES.PasswordChange} component={PasswordChange} />
                 <Route exact path={ROUTES.LANDING} component={LandingPage} />
       <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
       <Route path={ROUTES.SIGN_IN} component={SignInPage} />
